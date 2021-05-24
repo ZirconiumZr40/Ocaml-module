@@ -1,0 +1,26 @@
+opam-version: "2.0.8"
+name: "print"
+version: "1.0"
+synopsis: "This is an OCaml module to print list and array"
+description: """
+Here you will find list and array functions
+
+If you want to see how I made this module and maybe add function :
+https://github.com/ZirconiumZr40/Ocaml-module
+
+You can follow me on Twitter :
+https://twitter.com/zirconium_60
+"""
+
+maintainer: "ZirconiumZr"
+authors: "ZirconiumZr"
+license: ""
+homepage: "https://github.com/ZirconiumZr40/Ocaml-module"
+bug-reports: "None"
+dev-repo: "https://github.com/ZirconiumZr40/Ocaml-module"
+depends: [ "ocaml" "ocamlfind" ]
+build: [
+    ["./configure" "--prefix=%{print}%"]
+    [make]
+]
+install : [make "install"]
